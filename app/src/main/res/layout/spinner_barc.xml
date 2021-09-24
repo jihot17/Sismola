@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSpBarc"
+        android:singleLine="true"
+        android:text="Pilih"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

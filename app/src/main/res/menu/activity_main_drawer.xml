@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/sun"
+            android:title="Grafik Intensitas Cahaya" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/water"
+            android:title="Grafik Curah Hujan" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/phmeter"
+            android:title="Grafik PH Tanah" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/damp"
+            android:title="Grafik Kelembapan Tanah" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/thermometer"
+            android:title="Grafik Suhu Tanah" />
+        <item
+            android:id="@+id/parent"
+            android:icon="@drawable/damp"
+            android:title="Grafik Kelembapan Udara" />
+        <item
+            android:id="@+id/percent"
+            android:icon="@drawable/thermometer"
+            android:title="Grafik Suhu Udara" />
+    </group>
+</menu>

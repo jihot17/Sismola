@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".G_Curah_Hujan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Grafik Curah Hujan" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device" />
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/spBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@android:color/darker_gray"
+                    android:layout_marginRight="15dp"
+                    android:gravity="end"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Update" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:drawablePadding="5dp"
+                android:drawableTint="@android:color/darker_gray"
+                android:layout_marginRight="15dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/loTime"
+        android:visibility="visible"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="8sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="04:00 AM"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:textSize="8sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08:00 AM"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:textSize="8sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="12:00 PM"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="8sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="04:00 PM"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:textSize="8sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08:00 PM"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_weight="1"
+            android:textSize="8sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11:55 PM"
+            android:background="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="8sp"/>
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

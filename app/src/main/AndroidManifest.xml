@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sismola">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BE"
+        android:allowBackup="true"
+        android:icon="@drawable/iconsis"
+        android:label="SISMOLA"
+        android:roundIcon="@drawable/iconsis"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home"></activity>
+        <activity android:name=".DaftarActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="SISMOLA"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

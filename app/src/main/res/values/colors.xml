@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0B6111</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#000000</color>
+    <color name="background">#8D8A8A</color>
+    <color name="cahaya">#ffa500</color>
+    <color name="hujan">#00bfff</color>
+    <color name="tanah">#90EE90</color>
+    <color name="udara">#4682b4</color>
+</resources>
